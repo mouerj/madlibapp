@@ -1,37 +1,35 @@
 //
-//  NameViewController.m
+//  AdverbViewController.m
 //  MadLibsApp
 //
-//  Created by Richard Martin on 2016-01-11.
+//  Created by Joseph Mouer on 1/11/16.
 //  Copyright © 2016 Richard Martin. All rights reserved.
 //
 
-#import "NameViewController.h"
-#import "EnterAdjectiveViewController.h"
+#import "AdverbViewController.h"
+#import "ResultsViewController.h"
 
+@interface AdverbViewController ()
 
-@interface NameViewController ()
-
-@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *enterAdverbText;
 
 @end
 
-@implementation NameViewController
+@implementation AdverbViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSLog(self.verb);
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
 -(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
     
-    if ([self.nameTextField.text isEqualToString:@""])
+    if ([self.enterAdverbText.text isEqualToString:@""])
     {
         return NO;
     }
@@ -40,11 +38,11 @@
         return YES;
     }
 }
-
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
-    EnterAdjectiveViewController *dvc = segue.destinationViewController;
-    dvc.name = self.nameTextField.text;
+    ResultsViewController *dvc = segue.destinationViewController;
+    dvc.adverb = self.enterAdverbText.text;
+    dvc.verb = self.verb;
     
 }
 

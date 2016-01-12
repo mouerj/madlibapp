@@ -20,6 +20,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QIa-Ue-Ux2">
                                 <rect key="frame" x="95" y="235" width="131" height="30"/>
                                 <state key="normal" title="Let's play mad libs!"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="135" y="285" width="131" height="30"/>
+                                </variation>
                                 <connections>
                                     <segue destination="2nH-mx-Jnq" kind="show" id="cGr-Wb-CFf"/>
                                 </connections>
@@ -31,7 +34,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="930" y="336.97183098591546"/>
+            <point key="canvasLocation" x="1398" y="336"/>
         </scene>
         <!--Name View Controller-->
         <scene sceneID="UCq-la-WaY">
@@ -50,9 +53,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="152" y="273" width="97" height="30"/>
+                                    <rect key="frame" x="152" y="285" width="97" height="30"/>
                                 </variation>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter a name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rh3-Xm-5vv">
+                                <rect key="frame" x="107" y="86" width="106" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="150" y="210" width="101" height="21"/>
+                                </variation>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61Q-Zg-EQT">
                                 <rect key="frame" x="144" y="269" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
@@ -63,15 +75,6 @@
                                     <segue destination="uD6-8c-drV" kind="show" identifier="namedEntered" id="SEP-pk-5cd"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter a name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rh3-Xm-5vv">
-                                <rect key="frame" x="107" y="86" width="106" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="147" y="201" width="106" height="21"/>
-                                </variation>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -82,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Di4-ZS-1VU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1683.75" y="336.97183098591546"/>
+            <point key="canvasLocation" x="2094" y="336"/>
         </scene>
         <!--Enter Adjective View Controller-->
         <scene sceneID="hFm-mF-Sga">
@@ -110,17 +113,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="152" y="286" width="97" height="30"/>
+                                    <rect key="frame" x="152" y="285" width="97" height="30"/>
                                 </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2S-aG-V12">
                                 <rect key="frame" x="118" y="269" width="85" height="30"/>
-                                <state key="normal" title="See Mad Lib"/>
+                                <state key="normal" title="Next"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="158" y="361" width="85" height="30"/>
+                                    <rect key="frame" x="184" y="361" width="32" height="30"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="wcm-9E-OQH" kind="show" id="wc7-g4-242"/>
+                                    <segue destination="N4h-w7-1EQ" kind="show" id="tTj-r0-m7d"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -133,7 +136,135 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tH1-6Q-Mva" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2491.875" y="388.73239436619713"/>
+            <point key="canvasLocation" x="2766" y="336"/>
+        </scene>
+        <!--Verb View Controller-->
+        <scene sceneID="NUq-ND-JWd">
+            <objects>
+                <viewController id="N4h-w7-1EQ" customClass="VerbViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZX4-Ud-TEL"/>
+                        <viewControllerLayoutGuide type="bottom" id="6BO-HU-ucb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cIo-uE-Vd6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Verb" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twu-L6-JY9">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="160" y="206" width="81" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LdO-Kk-cbg">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="184" y="355" width="32" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="aza-uf-rmS" kind="show" id="zrD-PU-fqj"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8GY-Nc-UWt">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="152" y="285" width="97" height="30"/>
+                                </variation>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="twu-L6-JY9"/>
+                                <exclude reference="LdO-Kk-cbg"/>
+                                <exclude reference="8GY-Nc-UWt"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="twu-L6-JY9"/>
+                                <include reference="LdO-Kk-cbg"/>
+                                <include reference="8GY-Nc-UWt"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="enterVerbText" destination="8GY-Nc-UWt" id="qGs-oS-9Hy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cNM-oq-mao" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3465" y="336"/>
+        </scene>
+        <!--Adverb View Controller-->
+        <scene sceneID="zr6-fi-Rmv">
+            <objects>
+                <viewController id="aza-uf-rmS" customClass="AdverbViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fa6-hY-BMR"/>
+                        <viewControllerLayoutGuide type="bottom" id="h2I-6x-fHc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ubv-YE-ZhE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x7h-ve-v5H">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="152" y="285" width="97" height="30"/>
+                                </variation>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Adverb" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXE-0y-8mW">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="150" y="205" width="100" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tj9-EP-W6l">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Show Mad Lib"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="137" y="367" width="127" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="wcm-9E-OQH" kind="show" id="2ll-jl-yjs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="x7h-ve-v5H"/>
+                                <exclude reference="KXE-0y-8mW"/>
+                                <exclude reference="Tj9-EP-W6l"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="x7h-ve-v5H"/>
+                                <include reference="KXE-0y-8mW"/>
+                                <include reference="Tj9-EP-W6l"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="enterAdverbText" destination="x7h-ve-v5H" id="GPb-Hv-vQt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KiV-Kz-77S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4162.5" y="336"/>
         </scene>
         <!--Results View Controller-->
         <scene sceneID="au8-Sm-dOb">
@@ -147,14 +278,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ku-6W-xOE">
-                                <rect key="frame" x="20" y="155" width="280" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="60" y="191" width="280" height="30"/>
-                                </variation>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWR-LD-m60">
                                 <rect key="frame" x="125" y="422" width="71" height="30"/>
                                 <state key="normal" title="Start Over"/>
@@ -165,6 +288,14 @@
                                     <segue destination="bbr-Ci-eKH" kind="unwind" unwindAction="goback:" id="jfs-Oz-OI0"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ku-6W-xOE">
+                                <rect key="frame" x="20" y="155" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="22" y="177" width="356" height="30"/>
+                                </variation>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -176,7 +307,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RnY-uQ-NTl" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="bbr-Ci-eKH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3178.125" y="388.73239436619713"/>
+            <point key="canvasLocation" x="4896" y="336"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yM7-sw-jrX">

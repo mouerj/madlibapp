@@ -7,9 +7,10 @@
 //
 
 #import "EnterAdjectiveViewController.h"
-#import "ResultsViewController.h"
+#import "VerbViewController.h"
 
 @interface EnterAdjectiveViewController ()
+
 @property (weak, nonatomic) IBOutlet UITextField *adjectiveTextField;
 
 @end
@@ -20,7 +21,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    // NSLog(self.name);
+    NSLog(self.name);
     
 }
 
@@ -30,21 +31,20 @@
 }
 -(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
     
-    if ([self.adjectiveTextField.text isEqualToString:@""]) {
+    if ([self.adjectiveTextField.text isEqualToString:@""])
+    {
         return NO;
-    } else {
+    }
+    else
+    {
         return YES;
     }
 }
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
-    ResultsViewController *dvc = segue.destinationViewController;
+    VerbViewController *dvc = segue.destinationViewController;
     dvc.adjective = self.adjectiveTextField.text;
     dvc.name = self.name;
-    
-    
-    
-    
 }
 
 

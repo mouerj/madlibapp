@@ -16,6 +16,8 @@
 		A3FBB2F41C4451C500F4D915 /* NameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FBB2F31C4451C500F4D915 /* NameViewController.m */; };
 		A3FBB2F71C4454F700F4D915 /* EnterAdjectiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FBB2F61C4454F700F4D915 /* EnterAdjectiveViewController.m */; };
 		A3FBB2FA1C4457AD00F4D915 /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FBB2F91C4457AD00F4D915 /* ResultsViewController.m */; };
+		DF11E0521C44966200417298 /* VerbViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF11E0511C44966200417298 /* VerbViewController.m */; };
+		DF11E0551C44969500417298 /* AdverbViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF11E0541C44969500417298 /* AdverbViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,10 @@
 		A3FBB2F61C4454F700F4D915 /* EnterAdjectiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterAdjectiveViewController.m; sourceTree = "<group>"; };
 		A3FBB2F81C4457AD00F4D915 /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
 		A3FBB2F91C4457AD00F4D915 /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
+		DF11E0501C44966200417298 /* VerbViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerbViewController.h; sourceTree = "<group>"; };
+		DF11E0511C44966200417298 /* VerbViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerbViewController.m; sourceTree = "<group>"; };
+		DF11E0531C44969500417298 /* AdverbViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdverbViewController.h; sourceTree = "<group>"; };
+		DF11E0541C44969500417298 /* AdverbViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdverbViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,17 +73,21 @@
 		A3FBB2DA1C4450DD00F4D915 /* MadLibsApp */ = {
 			isa = PBXGroup;
 			children = (
-				A3FBB2DE1C4450DD00F4D915 /* AppDelegate.h */,
-				A3FBB2DF1C4450DD00F4D915 /* AppDelegate.m */,
 				A3FBB2E11C4450DD00F4D915 /* ViewController.h */,
 				A3FBB2E21C4450DD00F4D915 /* ViewController.m */,
-				A3FBB2F51C4454F700F4D915 /* EnterAdjectiveViewController.h */,
-				A3FBB2F61C4454F700F4D915 /* EnterAdjectiveViewController.m */,
-				A3FBB2E41C4450DD00F4D915 /* Main.storyboard */,
-				A3FBB2F81C4457AD00F4D915 /* ResultsViewController.h */,
-				A3FBB2F91C4457AD00F4D915 /* ResultsViewController.m */,
 				A3FBB2F21C4451C500F4D915 /* NameViewController.h */,
 				A3FBB2F31C4451C500F4D915 /* NameViewController.m */,
+				A3FBB2F51C4454F700F4D915 /* EnterAdjectiveViewController.h */,
+				A3FBB2F61C4454F700F4D915 /* EnterAdjectiveViewController.m */,
+				DF11E0501C44966200417298 /* VerbViewController.h */,
+				DF11E0511C44966200417298 /* VerbViewController.m */,
+				DF11E0531C44969500417298 /* AdverbViewController.h */,
+				DF11E0541C44969500417298 /* AdverbViewController.m */,
+				A3FBB2F81C4457AD00F4D915 /* ResultsViewController.h */,
+				A3FBB2F91C4457AD00F4D915 /* ResultsViewController.m */,
+				A3FBB2E41C4450DD00F4D915 /* Main.storyboard */,
+				A3FBB2DE1C4450DD00F4D915 /* AppDelegate.h */,
+				A3FBB2DF1C4450DD00F4D915 /* AppDelegate.m */,
 				A3FBB2E71C4450DD00F4D915 /* Assets.xcassets */,
 				A3FBB2E91C4450DD00F4D915 /* LaunchScreen.storyboard */,
 				A3FBB2EC1C4450DD00F4D915 /* Info.plist */,
@@ -168,8 +178,10 @@
 				A3FBB2E01C4450DD00F4D915 /* AppDelegate.m in Sources */,
 				A3FBB2F71C4454F700F4D915 /* EnterAdjectiveViewController.m in Sources */,
 				A3FBB2FA1C4457AD00F4D915 /* ResultsViewController.m in Sources */,
+				DF11E0551C44969500417298 /* AdverbViewController.m in Sources */,
 				A3FBB2DD1C4450DD00F4D915 /* main.m in Sources */,
 				A3FBB2F41C4451C500F4D915 /* NameViewController.m in Sources */,
+				DF11E0521C44966200417298 /* VerbViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +328,7 @@
 				A3FBB2F11C4450DD00F4D915 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
