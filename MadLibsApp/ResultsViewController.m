@@ -19,9 +19,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(self.adverb);
+    //NSLog(self.adverb);
     
-    self.resultsTextView.text = [NSString stringWithFormat: @"%@ %@ %@ %@", self.name, self.adjective, self.verb, self.adverb];
+    self.resultsTextView.text = [NSString stringWithFormat: @"Don't you think %@, who is very %@ %@ %@?", self.name, self.adjective, self.verb, self.adverb];
 }
 
 

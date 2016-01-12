@@ -22,7 +22,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    NSLog(self.adjective);
+    //NSLog(self.adjective);
 
 }
 
@@ -47,8 +47,9 @@
     AdverbViewController *dvc = segue.destinationViewController;
     dvc.verb = self.enterVerbText.text;
     dvc.adjective = self.adjective;
-    
-}
+    dvc.name = self.name;
+
+    }
 
 
 @end

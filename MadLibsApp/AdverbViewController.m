@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSLog(self.verb);
+    //NSLog(self.verb);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -43,7 +43,9 @@
     ResultsViewController *dvc = segue.destinationViewController;
     dvc.adverb = self.enterAdverbText.text;
     dvc.verb = self.verb;
-    
+    dvc.adjective = self.adjective;
+    dvc.name = self.name;
+
 }
 
 

@@ -11,5 +11,6 @@
 @interface AdverbViewController : UIViewController
 @property NSString *verb;
 @property NSString *adjective;
+@property NSString *name;
 
 @end

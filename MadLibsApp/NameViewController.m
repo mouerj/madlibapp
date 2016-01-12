@@ -45,7 +45,6 @@
     
     EnterAdjectiveViewController *dvc = segue.destinationViewController;
     dvc.name = self.nameTextField.text;
-    
 }
 
 
