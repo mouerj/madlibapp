@@ -29,13 +29,19 @@
 }
 
 
+-(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender {
+    
+    if ([self.nameTextField.text isEqualToString:@""]) {
+        return NO;
+    } else {
+        return YES;
+    }
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
     EnterAdjectiveViewController *dvc = segue.destinationViewController;
     dvc.name = self.nameTextField.text;
-    
-    
-    
 }
 
 
